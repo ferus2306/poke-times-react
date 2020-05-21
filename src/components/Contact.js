@@ -1,7 +1,17 @@
 import React from 'react'
 
 
-const Contact = () => {
+// Install Router command: npm install react-router-dom
+// when adding props, we automatically import and can use Router functionality
+const Contact = (props) => {
+    // console.log(props)
+
+
+    // programatically redirect to the about link. 
+    // setTimeout(() => {
+    //     props.history.push('/about')
+    // }, 2000);
+
     return (
         <div className='container'>
             <h4 className='center'>Contact</h4>

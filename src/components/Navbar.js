@@ -1,7 +1,14 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, withRouter } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+
+    // need to use high order component withRouter, make sure to import it as well.
+    setTimeout(()=>{
+        props.history.push('./about')
+    }, 2000);
+
     return (
         <nav className="nav-wrapper red darken-3">
             <div className="container">
@@ -17,4 +24,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default withRouter(Navbar);
