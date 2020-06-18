@@ -5,10 +5,6 @@ import { connect } from 'react-redux'
 
 
 class Home extends Component {
-
-
-
-
     render () {
         console.log(this.props)
         const { posts } = this.props;
